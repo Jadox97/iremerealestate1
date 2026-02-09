@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IREME Real Estate | Professional System</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <span class="badge">IREME Real Estate • Verified Listings</span>
+        <span>Homes • Land • Rentals • Construction • CCTV • Electricity</span>
+      </div>
+      <div class="social">
+        <a class="iconbtn" href="https://youtube.com/@iremerealestate?si=4X9ltSRgJiGJODxw" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5A3 3 0 0 0 2.4 7.2 31.5 31.5 0 0 0 2 12a31.5 31.5 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 22 12a31.5 31.5 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg> <span>YouTube</span>
+        </a>
+        <a class="iconbtn" href="#" target="_blank" rel="noopener" title="Replace # with your Facebook page link">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6H16.7V4.8c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.6-4.5 4.6V11H7v3h2.5v8h4Z"/></svg> <span>Facebook</span>
+        </a>
+        <a class="iconbtn" href="tel:0788289323">Call: 0788289323</a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="IREME Real Estate Logo" />
+        <div class="name">
+          IREME Real Estate
+          <small>Professional Real Estate System</small>
+        </div>
+      </div>
+
+      <div class="search" role="search" aria-label="Search">
+        <select aria-label="Category">
+          <option>All</option>
+          <option>Houses</option>
+          <option>Land</option>
+          <option>Rentals</option>
+          <option>Services</option>
+        </select>
+        <input id="q" type="search" placeholder="Search houses, land, rentals, services..." />
+        <button id="searchBtn" type="button">Search</button>
+      </div>
+
+      <div class="nav-area">
+        <div class="menu-toggle" onclick="toggleNav()">☰</div>
+        <nav id="nav">
+          <a class="nav-link" href="#marketplace">Marketplace</a>
+
+          <div class="dropdown" id="servicesDrop">
+            <a class="nav-link" href="#marketplace" onclick="toggleDrop(event,'servicesDrop')">Services</a>
+            <div class="mega">
+              <div class="mega-grid">
+                <a href="#marketplace"><strong>Land & House Sales</strong><span>Buy verified land & modern houses</span></a>
+                <a href="#marketplace"><strong>Renting & Leasing</strong><span>Find houses & apartments for rent</span></a>
+                <a href="#footerAbout"><strong>Construction</strong><span>Build & renovate with quality</span></a>
+                <a href="#footerAbout"><strong>Architectural & Design</strong><span>Exterior & interior design support</span></a>
+                <a href="#footerAbout"><strong>CCTV Installation</strong><span>Home & business security systems</span></a>
+                <a href="#footerAbout"><strong>Electricity & Internet</strong><span>Safe wiring & home internet setup</span></a>
+              </div>
+            </div>
+          </div>
+
+          <a class="nav-link" href="#promo">Ads</a>
+          <a class="nav-link" href="#media">Media</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Find Homes & Land Faster</h1>
+      <p>Search verified listings, browse categories, and contact us instantly.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#marketplace">Browse Listings</a>
+        <a class="btn" href="#contact">Request a Site Visit</a>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><strong>Houses</strong><span>For sale & rent</span></div>
+        <div class="kpi"><strong>Land</strong><span>Nduba • Gasanze • Nyabitare</span></div>
+        <div class="kpi"><strong>Services</strong><span>CCTV • Electricity • Design</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="marketplace" class="section">
+    <div class="container">
+      <div class="quickwrap">
+        <div>
+          <h2 style="margin:0">Marketplace</h2>
+          <div class="small">More space for products + each product rotates up to 10 images automatically.</div>
+        </div>
+        <div class="quickdrop">
+          <div class="quickbtn">Quick Categories ▾</div>
+          <div class="quickmenu" role="menu">
+            <div class="quickitem" data-filter="House"><div><strong>Houses for Sale</strong><span>Verified houses & deals</span></div><span>→</span></div>
+            <div class="quickitem" data-filter="Land"><div><strong>Land for Sale</strong><span>Nduba • Gasanze • Nyabitare</span></div><span>→</span></div>
+            <div class="quickitem" data-filter="Rental"><div><strong>Houses for Rent</strong><span>Short-term & long-term</span></div><span>→</span></div>
+            <div class="quickitem" data-filter="Service"><div><strong>Home Services</strong><span>CCTV • Electricity • Design</span></div><span>→</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filters">
+        <button class="pill active" id="pillAll">All</button>
+        <button class="pill" id="pillHouses">Houses</button>
+        <button class="pill" id="pillLand">Land</button>
+        <button class="pill" id="pillRentals">Rentals</button>
+        <button class="pill" id="pillServices">Services</button>
+      </div>
+
+      <div class="grid" id="listingGrid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Featured</h2>
+      <p class="lead">Highlighted listings and best deals.</p>
+      <div class="grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <section id="promo" class="section">
+    <div class="container">
+      <h2>Ads & Promotions</h2>
+      <p class="lead">Your promotions rotate automatically like big business websites.</p>
+      <div class="promo-wrap">
+        <div class="slider">
+          <div class="slides" id="slides">
+            <div class="slide">
+              <div><strong>New Listings Available</strong><div class="small">Ask for the latest houses & plots in Kigali.</div></div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <a class="btn primary" href="#marketplace">View</a>
+                <a class="btn ghost" href="#contact">Contact</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div><strong>Construction & Design Offer</strong><div class="small">Modern house design + quality construction packages.</div></div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <a class="btn primary" href="#footerAbout">Get Quote</a>
+                <a class="btn ghost" href="#contact">Call Now</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div><strong>CCTV & Electricity Installation</strong><div class="small">Secure your home with professional installation.</div></div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <a class="btn primary" href="https://wa.me/250788289323" target="_blank" rel="noopener">WhatsApp</a>
+                <a class="btn ghost" href="#contact">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dots" id="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="media" class="section">
+    <div class="container">
+      <h2>Media</h2>
+      <p class="lead">Watch our latest videos and follow us.</p>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/kI4cNe8lDzY" allowfullscreen title="IREME Real Estate Video 1"></iframe>
+        <iframe src="https://www.youtube.com/embed/ejYK3j9SRIY" allowfullscreen title="IREME Real Estate Video 2"></iframe>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+        <a class="btn ghost" href="https://youtube.com/@iremerealestate?si=4X9ltSRgJiGJODxw" target="_blank" rel="noopener">YouTube Channel</a>
+        <a class="btn ghost" href="#" target="_blank" rel="noopener" title="Replace # with your Facebook page link">Facebook Page</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About moved near bottom (footer area) -->
+  <section id="footerAbout" class="section">
+    <div class="container">
+      <h2>About IREME Real Estate</h2>
+      <p class="lead">Rwanda-based company delivering real estate, construction, design and smart installations.</p>
+      <div class="grid">
+        <div class="card"><div class="body"><h3>Why Choose Us</h3><div class="small">Verified listings, trusted guidance, and professional workmanship.</div></div></div>
+        <div class="card"><div class="body"><h3>What We Do</h3><div class="small">Sell land & houses, rentals, construction, design, CCTV and electricity installation.</div></div></div>
+        <div class="card"><div class="body"><h3>Fast Support</h3><div class="small">Call or WhatsApp for prices, locations and site visits.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / WhatsApp / Site Visits (in order) -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="lead">Call or WhatsApp us for details, prices, and site visits.</p>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
+        <div class="card"><div class="body"><h3>Contact</h3><div><strong>0788289323</strong></div><div class="small">Rwanda</div></div></div>
+        <div class="card"><div class="body"><h3>WhatsApp</h3><div class="small">Chat instantly with our team.</div><a class="btn primary" href="https://wa.me/250788289323" target="_blank" rel="noopener" style="margin-top:10px">Open WhatsApp</a></div></div>
+        <div class="card"><div class="body"><h3>Site Visits</h3><div class="small">Book a visit for houses, land, or consultation.</div><a class="btn ghost" href="tel:0788289323" style="margin-top:10px">Call Now</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>IREME Real Estate</h4>
+          <div class="small">Homes • Land • Rentals • Construction • Design • CCTV • Electricity</div>
+        </div>
+        <div>
+          <h4 id="footerContact">Contact</h4>
+          <div class="small">
+            <div><strong>0788289323</strong></div>
+            <div style="margin-top:10px"><strong>WhatsApp</strong></div>
+            <a href="https://wa.me/250788289323" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <div style="margin-top:10px"><strong>Site Visits</strong></div>
+            <a href="tel:0788289323">Call to book a visit</a>
+          </div>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <div class="small">
+            <a href="https://youtube.com/@iremerealestate?si=4X9ltSRgJiGJODxw" target="_blank" rel="noopener">YouTube</a><br/>
+            <a href="#" target="_blank" rel="noopener" title="Replace # with your Facebook page link">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="copy">© 2026 IREME Real Estate. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/250788289323" target="_blank" rel="noopener">WhatsApp</a>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
